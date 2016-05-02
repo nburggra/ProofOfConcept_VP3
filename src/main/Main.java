@@ -26,6 +26,8 @@ public class Main {
        Frame.setContentPane(new presentation.Frame2());
        Frame.setVisible(true); 
    
+       DatabaseConnection databaseconnection = new DatabaseConnection();
+       databaseconnection.openConnection();
     }
     
 }
