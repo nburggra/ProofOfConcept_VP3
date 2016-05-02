@@ -6,7 +6,7 @@
 package main;
 
 import javax.swing.*;
-
+import datastorage.DatabaseConnection;
 /**
  *
  * @author NickB
@@ -17,6 +17,7 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+
        JFrame Frame = new JFrame();
        Frame.setSize(400, 300);
        Frame.setDefaultCloseOperation(
@@ -24,7 +25,7 @@ public class Main {
        Frame.setTitle("Hartige Hap");
        Frame.setContentPane(new presentation.Frame2());
        Frame.setVisible(true); 
-       
+   
     }
     
 }
