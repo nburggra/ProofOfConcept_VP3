@@ -17,13 +17,13 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        JFrame frame = new JFrame();
-       frame.setSize(300, 300);
-       frame.setDefaultCloseOperation(
+       JFrame Frame = new JFrame();
+       Frame.setSize(400, 300);
+       Frame.setDefaultCloseOperation(
             JFrame.EXIT_ON_CLOSE);    
-       frame.setTitle("Hartige Hap");
-       frame.setContentPane(new Frame());
-       frame.setVisible(true); 
+       Frame.setTitle("Hartige Hap");
+       Frame.setContentPane(new presentation.Frame2());
+       Frame.setVisible(true); 
        
     }
     

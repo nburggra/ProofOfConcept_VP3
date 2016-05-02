@@ -14,38 +14,22 @@ import java.awt.event.*;
  * @author NickB
  */
 public class Frame extends JPanel {
-    private JButton VG,HG,DR;
-    public Frame(){
-        VG = new JButton ("Voorgerecht");
-        VG.addActionListener(new VGHandler());
-        
-        HG = new JButton ("Hoofdgerecht");
-        HG.addActionListener(new VGHandler());
-        
-        DR = new JButton ("Drankjes");
-        DR.addActionListener(new VGHandler());
-        
-        add(VG);
-        add(HG);
-        add(DR);
-    }
-       class VGHandler implements ActionListener{
-                public void actionPerformed(ActionEvent e){
-                    NewFrameSetup VGFrame = new NewFrameSetup();
-                    
-                }
-       }
-                       class HGHandler implements ActionListener{
-                public void actionPerformed(ActionEvent e){
-                    NewFrameSetup HGFrame = new NewFrameSetup();
-                    
-                }
-                       }
-                       class DRHandler implements ActionListener{
-                public void actionPerformed(ActionEvent e){
-                    NewFrameSetup DRFrame = new NewFrameSetup();
-                    
-                }
-                       }
+    private JTabbedPane tab;
+    private JPanel p1,p2,p3;
 
+    public Frame(){
+        tab = new JTabbedPane();
+        
+        p1=new JPanel();
+        p2=new JPanel();
+        p3=new JPanel();
+        
+        tab.addTab("Tab 1", p1);
+        tab.addTab("Tab 2", p2);
+        tab.addTab("Tab 3", p3);
+        
+        setLayout(new BorderLayout());
+        add(tab,BorderLayout.CENTER);
+       
+    }
 }
