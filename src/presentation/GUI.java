@@ -9,12 +9,12 @@ package presentation;
  *
  * @author Sven
  */
-public class Frame2 extends javax.swing.JPanel {
+public class GUI extends javax.swing.JPanel {
 
     /**
      * Creates new form Frame2
      */
-    public Frame2() {
+    public GUI() {
         initComponents();
     }
 

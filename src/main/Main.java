@@ -23,7 +23,7 @@ public class Main {
        Frame.setDefaultCloseOperation(
             JFrame.EXIT_ON_CLOSE);    
        Frame.setTitle("Hartige Hap");
-       Frame.setContentPane(new presentation.Frame2());
+       Frame.setContentPane(new presentation.GUI());
        Frame.setVisible(true); 
    
        DatabaseConnection databaseconnection = new DatabaseConnection();
