@@ -22,7 +22,7 @@ public class Main {
        frame.setDefaultCloseOperation(
             JFrame.EXIT_ON_CLOSE);    
        frame.setTitle("Hartige Hap");
-       frame.setContentPane(new Mainmenu());
+       frame.setContentPane(new Frame());
        frame.setVisible(true); 
        
     }
